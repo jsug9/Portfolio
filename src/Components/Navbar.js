@@ -28,7 +28,12 @@ const Navbar = () => {
   return (
     <nav>
       <div className="rightNav">
-        <h1>Augusto</h1>
+        <NavLink
+          to={links[0].path}
+          className="link"
+        >
+          Augusto
+        </NavLink>
       </div>
       <ul className="links">
         {links.map((link) => (
