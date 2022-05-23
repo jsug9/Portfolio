@@ -75,7 +75,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 - Thanks to my peers who are always there to offer support. 
 
 ## 📝 License
