@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="rightNav">
-        <h1>Augusto&apos;s Portfolio</h1>
+        <h1>Augusto</h1>
       </div>
       <ul className="links">
         {links.map((link) => (
