@@ -1,7 +1,10 @@
 import Navbar from './Navbar';
 
 const Header = () => (
-  <Navbar />
+  <header>
+    <Navbar />
+    <hr />
+  </header>
 );
 
 export default Header;

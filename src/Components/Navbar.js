@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className="rightNav">
         <NavLink
           to={links[0].path}
-          className="link"
+          className="mainLink"
         >
           Augusto
         </NavLink>
