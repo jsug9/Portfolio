@@ -2,9 +2,16 @@
 $desktopPadding: 0 3rem;
 $phonePadding: 0 1rem;
 
-// Colors
-$darkGrey: lightgray;
+// COLORS
+// light
 $lightGrey: gray;
+$lightPinkCode: #a0459f;
+$lightBlueCode: #6196db;
+$lightPurpleCode: #6548B8;
+$lightRedCode: #bc412e;
+
+// Dark
+$darkGrey: lightgray;
 
 // BODY
 body {
@@ -64,6 +71,22 @@ li {
   text-decoration: underline;
 }
 
+// HOME CONTAINER
+// Introduction
+.introduction {
+  display: flex;
+  width: 100%;
+}
+
+.profilePic {
+  width: 40%;
+}
+
+.pinkCode,
+.blueCode {
+  font-weight: bold;
+}
+
 // MEDIA QUERIES
 // WIDTH
 
@@ -103,6 +126,22 @@ li {
   .link:hover,
   .active {
     color: black;
+  }
+
+  .pinkCode {
+    color: $lightPinkCode;
+  }
+
+  .blueCode {
+    color: $lightBlueCode;
+  }
+
+  .purpleCode {
+    color: $lightPurpleCode;
+  }
+
+  .redCode {
+    color: $lightRedCode
   }
 }
 

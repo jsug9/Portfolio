@@ -1,7 +1,12 @@
+import Introduction from '../Components/Home/Introduction';
+
 const HomeContainer = () => {
   const helloWorld = 'Hello World 0';
   return (
-    <p>{helloWorld}</p>
+    <div className="homeContainer">
+      <Introduction />
+      <p>{helloWorld}</p>
+    </div>
   );
 };
 
