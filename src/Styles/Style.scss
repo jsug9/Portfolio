@@ -1,3 +1,133 @@
+// Padding
+$desktopPadding: 0 3rem;
+$phonePadding: 0 1rem;
+
+// Colors
+$darkGrey: lightgray;
+$lightGrey: gray;
+
+// BODY
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// NAVBAR
 nav {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.rightNav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: baseline;
+  justify-items: baseline;
+  gap: 1rem;
+}
+
+li {
+  text-decoration: none;
+}
+
+.mainLink,
+.mainLink:active {
+  text-decoration: none !important;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.active {
+  text-decoration: underline;
+}
+
+// MEDIA QUERIES
+// WIDTH
+
+// Phone
+@media (max-width: 768px) {
+  body {
+    padding: $phonePadding;
+  }
+}
+
+// Desktop
+@media (min-width: 768px) {
+  body {
+    padding: $desktopPadding;
+  }
+}
+
+// COLOR SCHEME
+
+// Light
+@media (prefers-color-scheme: light) {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .mainLink,
+  .mainLink:active {
+    color: $lightGrey !important;
+  }
+
+  .link,
+  .link:active {
+    color: $lightGrey;
+  }
+
+  .link:hover,
+  .active {
+    color: black;
+  }
+}
+
+// Dark
+@media (prefers-color-scheme: dark) {
+  body {
+    background: black;
+    color: white;
+  }
+
+  .mainLink,
+  .mainLink:active {
+    color: $darkGrey !important;
+    text-decoration: none !important;
+  }
+
+  .link,
+  .link:active {
+    color: $darkGrey;
+    text-decoration: none;
+  }
+
+  .link:hover,
+  .active {
+    text-decoration: underline;
+    color: white;
+  }
 }
