@@ -7,14 +7,14 @@ $phonePadding: 0 1rem;
 $lightGrey: gray;
 $lightPinkCode: #a0459f;
 $lightBlueCode: #6196db;
-$lightPurpleCode: #6548B8;
+$lightPurpleCode: #6548b8;
 $lightRedCode: #bc412e;
 
 // Dark
 $darkGrey: lightgray;
 $darkPinkCode: #ee81b0;
 $darkBlueCode: #87d8f7;
-$darkPurpleCode: #d6bbfA;
+$darkPurpleCode: #d6bbfa;
 $darkRedCode: #ef8876;
 
 // BODY
@@ -76,56 +76,30 @@ li {
 }
 
 .consoleLog {
-  // background-size: cover;
-  // overflow: hidden;
-  // border-right: .15em solid $lightGrey;
-  // height: 4rem;
-  // width: 0;
-  // animation: 
-  //     typing 3s steps(20, end) forwards,
-  //     blink 1.2s infinite;
-  font-weight: 700;
-  font-size:50px;
-  padding:20px;
-  background:#005F6B;
-  color:#00DFFC;
-  --n: 53 !important;
-  color:#0000;
-  background:
-    linear-gradient(-90deg,#00DFFC 5px,#0000 0) 10px 0,
-    linear-gradient(#00DFFC 0 0) 0 0;
-  background-size:calc(var(--n)*1ch) 200%;
-  -webkit-background-clip:padding-box,text;
-  background-clip:padding-box,text;
-  background-repeat:no-repeat;
-  animation: 
-   b .7s infinite steps(1),   
-   t calc(var(--n)*.3s) steps(var(--n)) infinite;
-}
-
-.type {
   --characters: 128;
+
   font-weight: 700;
-  color:#0000;
+  color: #0000;
   background:
     // Cursor
-    linear-gradient(-90deg, $darkGrey 3px,#0000 0) 10px 0,
+    linear-gradient(-90deg, $darkGrey 3px, #0000 0) 10px 0,
     // Text
     linear-gradient($lightGrey 0 0) 0 0;
-  background-size:calc(var(--characters)*1ch) 200%;
-  -webkit-background-clip:padding-box,text;
-  background-clip:padding-box,text;
-  background-repeat:no-repeat;
-  animation: 
-   blinker .7s infinite steps(1),   
-   texter calc(var(--characters)*.1s) steps(var(--characters)) infinite;
+  background-size: calc(var(--characters) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation:
+    blinker 0.7s infinite steps(1),
+    texter calc(var(--characters) * 0.1s) steps(var(--characters)) infinite;
 }
 
 @keyframes texter {
-  from {background-size:0 200%}
+  from { background-size: 0 200%; }
 }
+
 @keyframes blinker {
-  50% {background-position:0 -100%,0 0}
+  50% { background-position: 0 -100%, 0 0; }
 }
 
 // HOME CONTAINER
@@ -207,7 +181,7 @@ li {
   }
 
   .redCode {
-    color: $lightRedCode
+    color: $lightRedCode;
   }
 }
 
@@ -249,6 +223,6 @@ li {
   }
 
   .redCode {
-    color: $darkRedCode
+    color: $darkRedCode;
   }
 }
