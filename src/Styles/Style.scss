@@ -12,6 +12,10 @@ $lightRedCode: #bc412e;
 
 // Dark
 $darkGrey: lightgray;
+$darkPinkCode: #ee81b0;
+$darkBlueCode: #87d8f7;
+$darkPurpleCode: #d6bbfA;
+$darkRedCode: #ef8876;
 
 // BODY
 body {
@@ -177,5 +181,21 @@ li {
   .active {
     text-decoration: underline;
     color: white;
+  }
+
+  .pinkCode {
+    color: $darkPinkCode;
+  }
+
+  .blueCode {
+    color: $darkBlueCode;
+  }
+
+  .purpleCode {
+    color: $darkPurpleCode;
+  }
+
+  .redCode {
+    color: $darkRedCode
   }
 }
