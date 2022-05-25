@@ -76,6 +76,7 @@ li {
 .introduction {
   display: flex;
   width: 100%;
+  align-items: center;
 }
 
 .profilePic {
@@ -85,6 +86,14 @@ li {
 .pinkCode,
 .blueCode {
   font-weight: bold;
+}
+
+.padding2 {
+  padding-left: 2rem;
+}
+
+.padding4 {
+  padding-left: 4rem;
 }
 
 // MEDIA QUERIES

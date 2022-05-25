@@ -4,7 +4,7 @@ const Introduction = () => {
   const pink = (code) => <span className="pinkCode">{code}</span>;
   const blue = (code) => <span className="blueCode">{code}</span>;
   const purple = (code) => <span className="purpleCode">{code}</span>;
-  // const red = (code) => <span className="redCode">{code}</span>;
+  const red = (code) => <span className="redCode">{code}</span>;
 
   return (
     <section className="introduction">
@@ -15,6 +15,8 @@ const Introduction = () => {
           {' '}
           SwiftUI
         </p>
+
+        {/* <br /> */}
         <p>
           <span className="pinkCode">struct</span>
           {' '}
@@ -22,7 +24,7 @@ const Introduction = () => {
           {' '}
           &#123;
         </p>
-        <p>
+        <p className="padding2">
           {pink('let')}
           {' '}
           {blue('firstName')}
@@ -36,7 +38,7 @@ const Introduction = () => {
           {' '}
           {purple('String')}
         </p>
-        <p>
+        <p className="padding2">
           {pink('let')}
           {' '}
           {blue('tools')}
@@ -44,7 +46,7 @@ const Introduction = () => {
           {purple('String')}
           ]
         </p>
-        <p>
+        <p className="padding2">
           {pink('var')}
           {' '}
           {blue('startPresentation')}
@@ -54,7 +56,7 @@ const Introduction = () => {
           {' '}
           &#123;
         </p>
-        <p className="redCode">
+        <p className="redCode padding4">
           &quot;Hello, my name is &#92;&#40;
           {blue('firstName')}
           &#41; &#92;&#40;
@@ -71,21 +73,54 @@ const Introduction = () => {
           {purple('separator')}
           : &quot;, &quot;&#41;&#41;.
         </p>
+        <p className="padding2">&#125;</p>
         <p>&#125;</p>
-        <p>&#125;</p>
+
+        {/* <br /> */}
         <p>
-          <span className="pinkCode">let</span>
+          {pink('let')}
           {' '}
-          me = Developer&#40;
+          {blue('me')}
+          {' '}
+          = Developer &#40;
         </p>
-        <p>firstName: &quot;Augusto&quot;,</p>
-        <p>lastName: &quot;Galindo Ali&quot;,</p>
-        <p>country: &quot;Peru&quot;,</p>
-        <p>
-          tools: [&quot;Swift&quot;, &quot;JavaScript&quot;, &quot;react&quot;, &quot;redux&quot;]
+        <p className="padding2">
+          firstName:
+          {' '}
+          {red('"Augusto"')}
+          ,
+        </p>
+        <p className="padding2">
+          lastName:
+          {' '}
+          {red('"Galindo Ali"')}
+          ,
+        </p>
+        <p className="padding2">
+          country:
+          {' '}
+          {red('"Peru"')}
+          ,
+        </p>
+        <p className="padding2">
+          tools: [
+          {red('"Swift"')}
+          {', '}
+          {red('"JavaScript"')}
+          {', '}
+          {red('"React"')}
+          {', '}
+          {red('"Redux"')}
+          ]
         </p>
         <p>&#41;</p>
-        <p>print&#40;me.startPresentation&#41;</p>
+        {/* <br /> */}
+        <p>
+          {purple('print')}
+          &#40;
+          {blue('me')}
+          .startPresentation&#41;
+        </p>
       </code>
     </section>
   );
