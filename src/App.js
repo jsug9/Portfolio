@@ -7,17 +7,17 @@ import {
 import Header from './Components/Header';
 import HomeContainer from './Pages/HomeContainer';
 import AboutContainer from './Pages/AboutContainer';
-import ProjectsContainer from './Pages/ProjectsContainer';
-import ContactMeContainer from './Pages/ContactMeContainer';
+import PortfolioContainer from './Pages/PortfolioContainer';
+import ContactContainer from './Pages/ContactContainer';
 
 const App = () => (
   <Router basename={process.env.PUBLIC_URL}>
     <Header />
     <Routes>
       <Route path="/" element={<HomeContainer />} />
-      <Route path="/projects" element={<ProjectsContainer />} />
+      <Route path="/portfolio" element={<PortfolioContainer />} />
       <Route path="/about" element={<AboutContainer />} />
-      <Route path="/contact-me" element={<ContactMeContainer />} />
+      <Route path="/contact" element={<ContactContainer />} />
     </Routes>
   </Router>
 );

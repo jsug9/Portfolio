@@ -10,8 +10,8 @@ const Navbar = () => {
     },
     {
       id: 2,
-      path: '/projects',
-      text: 'Projects',
+      path: '/portfolio',
+      text: 'portfolio',
     },
     {
       id: 3,
@@ -20,8 +20,8 @@ const Navbar = () => {
     },
     {
       id: 4,
-      path: '/contact-me',
-      text: 'Contact Me',
+      path: '/contact',
+      text: 'Contact',
     },
   ];
 

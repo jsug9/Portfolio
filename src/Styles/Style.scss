@@ -9,6 +9,7 @@ $lightPinkCode: #a0459f;
 $lightBlueCode: #6196db;
 $lightPurpleCode: #6548b8;
 $lightRedCode: #bc412e;
+$lightSystem: #f7f7f7;
 
 // Dark
 $darkGrey: lightgray;
@@ -16,6 +17,16 @@ $darkPinkCode: #ee81b0;
 $darkBlueCode: #87d8f7;
 $darkPurpleCode: #d6bbfa;
 $darkRedCode: #ef8876;
+$darkSystem: #292a30;
+
+// ANIMATIONS
+@keyframes texter {
+  from { background-size: 0 200%; }
+}
+
+@keyframes blinker {
+  50% { background-position: 0 -100%, 0 0; }
+}
 
 // BODY
 body {
@@ -34,6 +45,10 @@ body {
 }
 
 // NAVBAR
+header {
+  padding-bottom: 1rem;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -75,37 +90,17 @@ li {
   text-decoration: underline;
 }
 
-.consoleLog {
-  font-weight: 700;
-  color: #0000;
-  background:
-    // Cursor
-    linear-gradient(-90deg, $darkGrey 3px, #0000 0) 10px 0,
-    // Text
-    linear-gradient($lightGrey 0 0) 0 0;
-  background-size: calc(var(--characters) * 1ch) 200%;
-  -webkit-background-clip: padding-box, text;
-  background-clip: padding-box, text;
-  background-repeat: no-repeat;
-  animation:
-    blinker 0.7s infinite steps(1),
-    texter calc(var(--characters) * 0.1s) steps(var(--characters)) infinite;
-}
-
-@keyframes texter {
-  from { background-size: 0 200%; }
-}
-
-@keyframes blinker {
-  50% { background-position: 0 -100%, 0 0; }
-}
-
 // HOME CONTAINER
 // Introduction
 .introduction {
   display: flex;
   width: 100%;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.codeContainer {
+  padding: 1px 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .profilePic {
@@ -123,6 +118,11 @@ li {
 
 .padding4 {
   padding-left: 4rem;
+}
+
+.consoleLog {
+  font-weight: 700;
+  color: #0000;
 }
 
 // MEDIA QUERIES
@@ -166,6 +166,10 @@ li {
     color: black;
   }
 
+  .codeContainer {
+    background-color: $lightSystem;
+  }
+
   .pinkCode {
     color: $lightPinkCode;
   }
@@ -180,6 +184,21 @@ li {
 
   .redCode {
     color: $lightRedCode;
+  }
+
+  .consoleLog {
+    background:
+      // Cursor
+      linear-gradient(-90deg, $darkGrey 3px, #0000 0) 10px 0,
+      // Text
+      linear-gradient($lightGrey 0 0) 0 0;
+    background-size: calc(var(--characters) * 1ch) 200%;
+    -webkit-background-clip: padding-box, text;
+    background-clip: padding-box, text;
+    background-repeat: no-repeat;
+    animation:
+      blinker 0.7s infinite steps(1),
+      texter calc(var(--characters) * 0.1s) steps(var(--characters)) infinite;
   }
 }
 
@@ -208,6 +227,10 @@ li {
     color: white;
   }
 
+  .codeContainer {
+    background-color: #292a30;
+  }
+
   .pinkCode {
     color: $darkPinkCode;
   }
@@ -222,5 +245,20 @@ li {
 
   .redCode {
     color: $darkRedCode;
+  }
+
+  .consoleLog {
+    background:
+      // Cursor
+      linear-gradient(-90deg, $lightGrey 3px, #0000 0) 10px 0,
+      // Text
+      linear-gradient($darkGrey 0 0) 0 0;
+    background-size: calc(var(--characters) * 1ch) 200%;
+    -webkit-background-clip: padding-box, text;
+    background-clip: padding-box, text;
+    background-repeat: no-repeat;
+    animation:
+      blinker 0.7s infinite steps(1),
+      texter calc(var(--characters) * 0.1s) steps(var(--characters)) infinite;
   }
 }
