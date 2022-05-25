@@ -108,7 +108,9 @@ li {
   font-weight: 700;
   color:#0000;
   background:
-    linear-gradient(-90deg, $darkGrey 5px,#0000 0) 10px 0,
+    // Cursor
+    linear-gradient(-90deg, $darkGrey 3px,#0000 0) 10px 0,
+    // Text
     linear-gradient($lightGrey 0 0) 0 0;
   background-size:calc(var(--characters)*1ch) 200%;
   -webkit-background-clip:padding-box,text;

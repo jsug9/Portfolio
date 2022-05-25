@@ -14,8 +14,8 @@ const Introduction = () => (
       <Code />
       <span className="type">
         Hello, my name is Augusto Galindo Ali,
-        I am a developer from Peru and I can use Swift, JavaScript, react,
-        redux.
+        I am a developer from Peru and I can use Swift, JavaScript, React,
+        Redux.
       </span>
     </div>
   </section>
