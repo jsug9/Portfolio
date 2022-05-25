@@ -2,6 +2,7 @@ import lightProfile from '../../Assets/Photos/Light.png';
 import darkProfile from '../../Assets/Photos/Dark.png';
 import isDarkModeEnabled from '../../Logic/DarkMode';
 import Code from './Code';
+import Print from './Print';
 
 const Introduction = () => (
   <section className="introduction">
@@ -12,11 +13,7 @@ const Introduction = () => (
     />
     <div className="codeDiv">
       <Code />
-      <span className="consoleLog">
-        Hello, my name is Augusto Galindo Ali,
-        I am a developer from Peru and I can use Swift, JavaScript, React,
-        Redux.
-      </span>
+      <Print />
     </div>
   </section>
 );
