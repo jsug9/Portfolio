@@ -11,8 +11,8 @@ const Introduction = () => (
       alt="Profile"
       className="profilePic"
     />
+    <Code />
     <div className="codeDiv">
-      <Code />
       <Print />
     </div>
   </section>

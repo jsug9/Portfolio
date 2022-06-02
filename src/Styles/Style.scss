@@ -96,15 +96,18 @@ li {
   display: flex;
   width: 100%;
   align-items: flex-start;
+  justify-content: space-between;
+  background: red;
 }
 
 .codeContainer {
   padding: 1px 0.5rem;
   margin-bottom: 1rem;
+  width: 50%;
 }
 
 .profilePic {
-  width: 40%;
+  width: 25%;
 }
 
 .pinkCode,
@@ -118,6 +121,10 @@ li {
 
 .padding4 {
   padding-left: 4rem;
+}
+
+.codeDiv {
+  width: 25%;
 }
 
 .consoleLog {
